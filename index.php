@@ -31,15 +31,32 @@ $btnClr = "rgba(25,50,25,0.25)";
 <style>
 .ctrl{
 	width: 33%;
-	height: 200px;
+	height: 16%;
 	float: left;
 	background-color: <?php echo $btnClr; ?>;
 	margin: 1px;
 	text-align: center;
+	
+}
+
+
+@media handheld {
+    .ctrl {
 	font-size: 3em;
 	line-height: 4em;
-
+    }
 }
+
+
+@media screen {
+    .ctrl {
+	font-size: 2em;
+	line-height: 3em;
+    }
+}
+
+
+
 </style>
 </head>
 <body>
